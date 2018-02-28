@@ -1,11 +1,16 @@
 Package: dynmat
 Type: Package
-Title: What the package does (short line)
+Title: A Dynamic Input-Output Matrix Exercise
 Version: 1.0
 Date: 2018-02-26
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-Imports: Rcpp (>= 0.12.15)
+Author: Gamaliel Lamboy
+Maintainer: Gamaliel Lamboy <gamaliel@estudiostecnicos.com>
+Description: This package tries to build an implementation of a "reactive"
+    Input-Output matrix. Demand in a sector is subdivided into commodities and
+    then inserted as inputs to a (marginal) production function for a sector.
+    This produces a new output value which is then recalibrated to total
+    output using the RAS methodology, and then fed back to produce new
+    inter-industry multipliers under the new demand.
+License: None (Own Package)
+Imports: Rcpp (>= 0.12.15), stats, utils, 
 LinkingTo: Rcpp, RcppArmadillo
